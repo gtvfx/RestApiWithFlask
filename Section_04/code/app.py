@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
+app.secret_key = 'sKey'
 api = Api(app)
 
 items = []
@@ -13,7 +14,7 @@ class Item(Resource):
 
     def post(self, name):
         if next(filter(lambda x: x['name'] == name, items), None):
-            return {'message': "An item with name '{0}' already exists.".format(name)}
+            return {'message': "An item with name '{0}' already exists.".format(name)}, 400
 
         data = request.get_json()
         item = {'name': name, 'price': data['price']}

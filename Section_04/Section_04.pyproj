@@ -27,6 +27,12 @@
     <Compile Include="code\app.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="code\security.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\user.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Section_04.py" />
   </ItemGroup>
   <ItemGroup>
