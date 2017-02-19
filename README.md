@@ -1,5 +1,5 @@
 # RestApiWithFlask
-Example code for setting up and REST Api using Python and Flask
+Example project for setting up a REST Api using Python and Flask
 
 
 ## Required Python Modules:
