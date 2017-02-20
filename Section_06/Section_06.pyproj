@@ -23,20 +23,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="code\app.py" />
-    <Compile Include="code\create_tables.py" />
-    <Compile Include="code\item.py" />
+    <Compile Include="code\db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\models\item.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\models\store.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\models\user.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\resources\item.py" />
+    <Compile Include="code\models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\resources\store.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\resources\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="code\security.py" />
-    <Compile Include="code\user.py" />
+    <Compile Include="code\resources\user.py" />
     <Compile Include="Section_06.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="code\" />
-    <Folder Include="code\__pycache__\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="code\__pycache__\item.cpython-35.pyc" />
-    <Content Include="code\__pycache__\security.cpython-35.pyc" />
-    <Content Include="code\__pycache__\user.cpython-35.pyc" />
+    <Folder Include="code\models\" />
+    <Folder Include="code\resources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
