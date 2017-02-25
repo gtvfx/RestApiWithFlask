@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>30109973-84b0-411c-85d1-006617bf0789</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Section_08.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Section_08</Name>
+    <RootNamespace>Section_08</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="code\app.py" />
+    <Compile Include="code\db.py" />
+    <Compile Include="code\models\item.py" />
+    <Compile Include="code\models\store.py" />
+    <Compile Include="code\models\user.py" />
+    <Compile Include="code\models\__init__.py" />
+    <Compile Include="code\resources\item.py" />
+    <Compile Include="code\resources\store.py" />
+    <Compile Include="code\resources\user.py" />
+    <Compile Include="code\resources\__init__.py" />
+    <Compile Include="code\security.py" />
+    <Compile Include="Section_08.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+    <Folder Include="code\.vs\" />
+    <Folder Include="code\.vs\Section_06\" />
+    <Folder Include="code\.vs\Section_06\v14\" />
+    <Folder Include="code\models\" />
+    <Folder Include="code\models\__pycache__\" />
+    <Folder Include="code\resources\" />
+    <Folder Include="code\resources\__pycache__\" />
+    <Folder Include="code\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="code\data.db" />
+    <Content Include="code\models\__pycache__\item.cpython-35.pyc" />
+    <Content Include="code\models\__pycache__\store.cpython-35.pyc" />
+    <Content Include="code\models\__pycache__\user.cpython-35.pyc" />
+    <Content Include="code\models\__pycache__\__init__.cpython-35.pyc" />
+    <Content Include="code\resources\__pycache__\item.cpython-35.pyc" />
+    <Content Include="code\resources\__pycache__\store.cpython-35.pyc" />
+    <Content Include="code\resources\__pycache__\user.cpython-35.pyc" />
+    <Content Include="code\resources\__pycache__\__init__.cpython-35.pyc" />
+    <Content Include="code\__pycache__\db.cpython-35.pyc" />
+    <Content Include="code\__pycache__\security.cpython-35.pyc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
